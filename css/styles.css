@@ -1,0 +1,178 @@
+@CHARSET "ISO-8859-1";
+
+*{
+	margin:0 auto;
+	padding: 0px;
+}
+
+@font-face{
+	font-family: eddie;
+	src: url('eddie_rounded-webfont.eot');
+	src: url('eddie_rounded-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('eddie_rounded-webfont.woff') format('woff'),
+	     url('eddie_rounded-webfont.ttf') format('truetype');
+}
+
+body{
+	font-family: eddie;
+	color: rgba(135, 14, 216, 0.72);
+	background: rgba(0, 0, 0, 0.15);
+}
+
+a img {
+	border: none
+}
+
+a {
+	color: #2ba6cb;
+	text-decoration: none;
+	line-height: inherit
+}
+
+a:hover {
+	color: #2795b6;
+}
+
+a:focus {
+	color: #2ba6cb;
+	outline: none;
+}
+
+p a,p a:visited {
+	line-height: inherit;
+}
+
+ul{
+	list-style: none;
+}
+
+/*header*/
+
+header{
+	height:71px;
+	background: #fafafa;
+	box-shadow: 0 1px 6px rgba(34, 25, 25, 0.6);
+	z-index: 999;
+	padding-left:2%;
+}
+
+header img{
+	height:100%;
+}
+
+.next{
+	height:40px;
+	line-height:2.6;
+	padding: 0 25px;
+	float: left;
+	display: block;
+}
+
+.next a{
+	color:#000;
+}
+
+.next:hover{
+	background: #eeeeee;
+	color: #000;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.active{
+	float:left;
+}
+
+.active a{	
+	color:#fff;
+	height:40px;
+	line-height:2.6;
+	padding: 0 25px;
+	display: block;
+	background: #F06B48;
+}
+
+.active a:hover{
+	color: #000;
+	background: #F06B48;
+}
+
+#logo{
+	position:relative;
+	float:left;
+}
+
+header a img{
+	height:15%;
+}
+
+#LogoText{
+	font-family: century gothic;
+	position: relative;
+	float: left;
+	font-size: 16px;
+	font-weight:normal;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.59);
+	padding-left:5%;
+	top:30%;
+	letter-spacing: -1px;
+}
+
+#city{
+	position:relative;
+	float:right;
+	top:35%;
+}
+
+/*slideShow*/
+
+#slideShow{
+	width:90%;
+	height:350px;
+	padding-bottom:0.2%;
+}
+
+.slideVisible{
+	position:absolute;
+	width: 90%;
+	height: 350px;
+	padding-top: 2px;
+}
+
+.slideInvisible{
+	position:absolute;
+	width: 90%;
+	height: 350px;
+	padding-top: 2px;
+	opacity:0;
+}
+
+/*content*/
+
+#content{
+	height:100%;
+	background: #FFF;
+	border-top: 1px dotted #999;
+	border-bottom: 1px dotted #999;
+	clear: both;
+	width: 90%;
+}
+
+#content img{
+	width:100%;
+}
+
+.column{
+	position:relative;
+	float: left;
+	width:50%;
+}
+
+/*signUp*/
+
+#signUp{
+	background: #262626;
+	height:300px;
+	width:90%;
+}
