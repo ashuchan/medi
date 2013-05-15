@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
+<!-- saved from url=(0037)http://localhost:8080/medi/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta charset="ISO-8859-1">
 <title>Medinited</title>
 <link href="css/styles.css" rel="stylesheet">
 <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="scripts/main.js" type="text/javascript"></script>
-</head>
 <body onload="slideShow()">
 	<header>
-		<img src ="images/logo.png" id="logo">
+		<img src="images/logo.png" id="logo">
 		<nav id="LogoText">
 			<ul>
 				<li class="active"><a href="#">Home</a></li>
@@ -20,14 +19,16 @@
 				<li class="next"><a href="#">Emergency</a></li>
 			</ul>
 		</nav>
+		<a href="javascript:scrollToSignUp()" class="sign">Sign Up</a>
+		<a href="#" class="sign">Sign In</a>
 		<a href="#" id="city"><label id="cityText">Bangalore</label><img src="images/down.png"></a>
 	</header>
 	<div id="slideShow">
-		<img id ="slide1" src="images/banner1.jpg" class="slideVisible">
-		<img id ="slide2" src="images/banner2.jpg" class="slideInvisible">
-		<img id ="slide3" src="images/banner3.png" class="slideInvisible">
-		<img id ="slide4" src="images/banner4.jpg" class="slideInvisible">
-		<img id ="slide5" src="images/banner5.jpg" class="slideInvisible">
+		<img id="slide1" src="images/banner1.jpg" class="slideVisible">
+		<img id="slide2" src="images/banner2.jpg" class="slideInvisible">
+		<img id="slide3" src="images/banner3.png" class="slideInvisible">
+		<img id="slide4" src="images/banner4.jpg" class="slideInvisible">
+		<img id="slide5" src="images/banner5.jpg" class="slideInvisible">
 	</div>
 	
 	<section id="content">
@@ -37,13 +38,61 @@
 	<section id="signUp">
 		<div id="wrap">
 			<article id="doctor" class="column">
-				Sign Up as a doctor
+				<span class="head">Sign Up as a doctor</span>
+				<p class="base">
+					Sign up to join the group of doctors who believe in changing the way India lives. With a
+					free registration you get to maintain your full profile online, where in users can get in touch
+					with you for medical advices and other support.You subscribe to a sms service wherein you get 
+					notified whenever any user looks for help or writes a review for you...
+				</p>
+				<img src="images/ima.png" class="inlineImage">
+				<p class="link">
+					Click here to sign up &amp; Read more
+				</p>
 			</article>
 			<article id="patient" class="column">
-				Sign up as a petient
+				<span class="head">Sign up as a patient</span>
+				<p class="base">
+					Sign up to avaial the feature of getting details of any doctor in the nation and even taking
+					appointmets for them online. Buy blood or look for/donate organs online. A free place to get
+					advice from doctors and even right a review for them...
+				</p>
+				<img src="images/user.png" class="inlineImage">
+				<p class="link">
+					Click here to sign up &amp; Read more
+				</p>
 			</article>
 		</div>
 	</section>
 	
-</body>
-</html>
+	<section id="adSpace">
+		<div id="wrap">
+		<article id="adText" class="column">
+			<p class="link">
+			         Revital, Jiyo Ji bhar ke
+			</p>
+		</article>
+		<article id="adImage" class="column">
+			<img id="ad1" src="images/ad1.jpg" class="adVisible">
+			<img id="ad2" src="images/ad2.jpg" class="adInvisible">
+		</article>
+		</div>
+	</section>
+
+	<footer>
+		<nav>
+			<ul>
+				<li class="left"><a href="#">Blog</a></li>
+				<li class="left"><a href="#">Press</a></li>
+				<li class="left"><a href="#">Add a Hospital</a></li>
+				<li class="left"><a href="#">Add a Doctor</a></li>
+				<li class="left"><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+		<p class="right">
+			&copy;MediNited
+		</p>
+		
+	</footer>
+
+</body></html>
