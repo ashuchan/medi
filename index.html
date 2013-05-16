@@ -7,6 +7,7 @@
 <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
 <script src="scripts/main.js" type="text/javascript"></script>
 <body onload="slideShow()">
+	<form name="search" method="post" action="#"></form>
 	<header>
 		<img src="images/logo.png" id="logo">
 		<nav id="LogoText">
@@ -23,6 +24,25 @@
 		<a href="#" class="sign">Sign In</a>
 		<a href="#" id="city"><label id="cityText">Bangalore</label><img src="images/down.png"></a>
 	</header>
+	
+	<div id="searchBar">
+		<p class="link">
+			Explore Doctors In Your City By
+		</p>
+		<div id="buttonBar">
+			<ul>
+				<li id="s1" class="sleft selected" onclick="toggleSearch(1)">All</li>
+				<li id="s2" class="sleft normal" onclick="toggleSearch(2)">Name</li>
+				<li id="s3" class="sleft normal" onclick="toggleSearch(3)">Experience</li>
+				<li id="s4" class="sleft normal" onclick="toggleSearch(4)">Specialty</li>
+				<li id="s5" class="sleft normal" onclick="toggleSearch(5)">Location</li>
+			</ul>
+			 <input type="text" id="sValue" placeholder="Type doctor's name..." class="input" autocomplete="off" form="search">
+			 <input type="submit" id="explore" value="Explore" class="button">
+		</div>
+		
+	</div>
+	
 	<div id="slideShow">
 		<img id="slide1" src="images/banner1.jpg" class="slideVisible">
 		<img id="slide2" src="images/banner2.jpg" class="slideInvisible">
@@ -31,11 +51,11 @@
 		<img id="slide5" src="images/banner5.jpg" class="slideInvisible">
 	</div>
 	
-	<section id="content">
+	<section id="content" class="element">
 		<img src="images/info.jpg">
 	</section>
 	
-	<section id="signUp">
+	<section id="signUp" class="element">
 		<div id="wrap">
 			<article id="doctor" class="column">
 				<span class="head">Sign Up as a doctor</span>
@@ -65,7 +85,7 @@
 		</div>
 	</section>
 	
-	<section id="adSpace">
+	<section id="adSpace" >
 		<div id="wrap">
 		<article id="adText" class="column">
 			<p class="link">

@@ -5,6 +5,8 @@ var current=1;
 
 var currentAd=1;
 
+var currentS=1;
+
 function slideShow(){
 	var cId = "#slide"+current;
 	$(cId).animate({ opacity: 0 }, 2000);
@@ -31,4 +33,14 @@ function scrollToSignUp(){
 	$('html,body').animate({
 		scrollTop: $('#signUp').offset().top
 		}, 1000);
+}
+
+function toggleSearch(id){
+	var el = document.getElementById("s"+id);
+	var cu = document.getElementById("s"+currentS);
+	el.style.backgroundColor="#cb202d";
+	el.style.color="#fff";
+	cu.style.backgroundColor="#dedede";
+	cu.style.color="#2d2d2d";
+	currentS=id;
 }
